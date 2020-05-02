@@ -25,7 +25,33 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Instance = this;
-        
+        m_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        GameObject uicanvas = GameObject.Find("Canvas");
+        foreach(Transform t in uicanvas.transform.GetComponentInChildren<Transform>())
+        {
+            if(t.name.CompareTo("txt_ammo") == 0)
+            {
+                txt_ammo = t.GetComponent<Text>();
+            }
+            else if (t.name.CompareTo("txt_hiscore") == 0)
+            {
+                txt_hiscore = t.GetComponent<Text>();
+                txt_hiscore.text = "High Score " + m_hiscore; 
+            }
+            else if(t.name.CompareTo("txt_life") == 0)
+            {
+                txt_score = t.GetComponent<Text>();   
+            }
+            else if(t.name.CompareTo("Restart Button") == 0)
+            {
+                button_restart = t.GetComponent<Button>();
+                button_restart.onClick.AddListener(delegate ()
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                });
+                button_restart.gameObject.SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
