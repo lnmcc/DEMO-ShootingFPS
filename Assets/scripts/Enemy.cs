@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
                 m_ani.SetBool("attack", true);
             }
         }
-        if(stateInfo.fullPathHash == Animator.StringToHash("Base Layer.attack")
+        if (stateInfo.fullPathHash == Animator.StringToHash("Base Layer.attack")
             && !m_ani.IsInTransition(0))
         {
             RotateTo();
@@ -77,7 +77,7 @@ public class Enemy : MonoBehaviour
                 m_timer = 2;
             }
         }
-        if(stateInfo.fullPathHash == Animator.StringToHash("Base Layer.death")
+        if (stateInfo.fullPathHash == Animator.StringToHash("Base Layer.death")
             && !m_ani.IsInTransition(0))
         {
             m_ani.SetBool("death", false);
