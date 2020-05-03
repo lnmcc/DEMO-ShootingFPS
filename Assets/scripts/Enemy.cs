@@ -79,6 +79,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void OnDamage(int damage)
+    {
+        m_life -= damage;
+    }
+
     void RotateTo()
     {
         Vector3 targetdir = m_player.m_transform.position - m_transform.position;
