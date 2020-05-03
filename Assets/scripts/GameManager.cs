@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         m_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         GameObject uicanvas = GameObject.Find("Canvas");
-        foreach(Transform t in uicanvas.transform.GetComponentInChildren<Transform>())
+        foreach(Transform t in uicanvas.transform.GetComponentsInChildren<Transform>())
         {
             if(t.name.CompareTo("txt_ammo") == 0)
             {

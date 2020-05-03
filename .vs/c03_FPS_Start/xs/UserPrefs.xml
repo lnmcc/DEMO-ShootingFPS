@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{A1846195-DF59-AB97-E12D-0EAC914EC95B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/scripts/GameManager.cs" Line="84" Column="55" />
-      <File FileName="Assets/scripts/Player.cs" Line="61" Column="72" />
-      <File FileName="Assets/scripts/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/GameManager.cs" Line="27" Column="6" />
+      <File FileName="Assets/scripts/Player.cs" />
+      <File FileName="Assets/scripts/Enemy.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="17cbc672-06ef-4097-85b1-40b7f7e46687" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2d76a16b-748e-43f2-a0b8-7d58a4a117f1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/sjie/Projects/Unity手机游工开发4示例工程/c03_FPS_Start/Assets/scripts/GameManager.cs" relfile="Assets/scripts/GameManager.cs" line="27" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
