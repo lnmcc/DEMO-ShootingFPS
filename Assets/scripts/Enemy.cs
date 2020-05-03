@@ -77,11 +77,27 @@ public class Enemy : MonoBehaviour
                 m_timer = 2;
             }
         }
+        if(stateInfo.fullPathHash == Animator.StringToHash("Base Layer.death")
+            && !m_ani.IsInTransition(0))
+        {
+            m_ani.SetBool("death", false);
+            if (stateInfo.normalizedTime >= 1.0f)
+            {
+                GameManager.Instance.SetScore(100);
+                Destroy(this.gameObject);
+            }
+        }
     }
 
     public void OnDamage(int damage)
     {
         m_life -= damage;
+        if(m_life <= 0)
+        {
+            Debug.Log("Enemy Death");
+            m_ani.SetBool("death", true);
+            m_agent.ResetPath();
+        }
     }
 
     void RotateTo()

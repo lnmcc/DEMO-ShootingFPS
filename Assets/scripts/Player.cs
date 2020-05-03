@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
             {
                 if(info.transform.tag.CompareTo("enemy") == 0)
                 {
+                    Debug.Log("Enemy Shooted");
                     Enemy enemy = info.transform.GetComponent<Enemy>();
                     enemy.OnDamage(1);
                 }
