@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_transform: {fileID: 0}
-  m_life: 5
+  m_life: 50
   m_layer:
     serializedVersion: 2
     m_Bits: 768

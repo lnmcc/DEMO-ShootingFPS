@@ -87,6 +87,17 @@ public class Enemy : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+        if (stateInfo.fullPathHash == Animator.StringToHash("Base Layer.attack")
+            && !m_ani.IsInTransition(0)) {
+            RotateTo();
+            m_ani.SetBool("attack", false);
+            if(stateInfo.normalizedTime >= 1.0f)
+            {
+                m_ani.SetBool("idle", true);
+                m_timer = 2;
+                m_player.onDamage(1);
+            }
+        }
     }
 
     public void OnDamage(int damage)

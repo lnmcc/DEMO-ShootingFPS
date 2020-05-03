@@ -36,11 +36,16 @@ public class GameManager : MonoBehaviour
             else if (t.name.CompareTo("txt_hiscore") == 0)
             {
                 txt_hiscore = t.GetComponent<Text>();
-                txt_hiscore.text = "High Score " + m_hiscore; 
+                //txt_hiscore.text = "High Score " + m_hiscore; 
+            }
+            else if(t.name.CompareTo("txt_score") == 0)
+            {
+                txt_score = t.GetComponent<Text>();
+                //txt_score.text = "Score " + m_score;
             }
             else if(t.name.CompareTo("txt_life") == 0)
             {
-                txt_score = t.GetComponent<Text>();   
+                txt_life = t.GetComponent<Text>();
             }
             else if(t.name.CompareTo("Restart Button") == 0)
             {

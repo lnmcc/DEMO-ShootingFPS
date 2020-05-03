@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     CharacterController m_ch;
     float m_movSpeed = 3.0f;
     float m_gravity = 2.0f;
-    public int m_life = 5;
+    public int m_life;
 
     Transform m_camTransform;
     Vector3 m_camRot;
