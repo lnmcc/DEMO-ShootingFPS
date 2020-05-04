@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
 {
     public Transform m_enemy;
     public int m_enemyCount = 0;
-    public int m_maxEnemy = 3;
+    public int m_maxEnemy = 30;
     public float m_timer = 0;
 
     protected Transform m_transform;

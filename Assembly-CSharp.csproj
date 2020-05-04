@@ -66,6 +66,7 @@
     <Compile Include="Assets\scripts\Enemy.cs" />
     <Compile Include="Assets\scripts\EnemySpawn.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
+    <Compile Include="Assets\scripts\MiniCamera.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/sjie/Projects/Unity手机游工开发4示例工程/c03_FPS_Start/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

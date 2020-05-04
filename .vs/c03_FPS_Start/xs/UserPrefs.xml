@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{A1846195-DF59-AB97-E12D-0EAC914EC95B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/EnemySpawn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/MiniCamera.cs">
     <Files>
       <File FileName="Assets/scripts/GameManager.cs" Line="44" Column="19" />
       <File FileName="Assets/scripts/Player.cs" Line="95" Column="36" />
-      <File FileName="Assets/scripts/Enemy.cs" Line="98" Column="30" />
-      <File FileName="Assets/scripts/EnemySpawn.cs" Line="5" Column="18" />
+      <File FileName="Assets/scripts/Enemy.cs" Line="34" Column="32" />
+      <File FileName="Assets/scripts/EnemySpawn.cs" Line="37" Column="30" />
+      <File FileName="Assets/scripts/MiniCamera.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
