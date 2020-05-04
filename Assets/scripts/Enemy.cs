@@ -13,7 +13,8 @@ public class Enemy : MonoBehaviour
     float m_timer = 2;
     int m_life = 15;
     Animator m_ani;
-    //protected EnemySpawn m_spawn;
+
+    protected EnemySpawn m_spawn;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,12 @@ public class Enemy : MonoBehaviour
         m_agent = GetComponent<NavMeshAgent>();
         m_agent.speed = m_movSpeed;
         m_agent.SetDestination(m_player.m_transform.position);
+    }
+
+    public void Init(EnemySpawn spawn)
+    {
+        m_spawn = spawn;
+        m_spawn.m_enemyCount++;
     }
 
     // Update is called once per frame
@@ -85,6 +92,7 @@ public class Enemy : MonoBehaviour
             {
                 GameManager.Instance.SetScore(100);
                 Destroy(this.gameObject);
+                m_spawn.m_enemyCount--;
             }
         }
         if (stateInfo.fullPathHash == Animator.StringToHash("Base Layer.attack")

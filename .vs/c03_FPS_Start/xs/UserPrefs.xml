@@ -1,18 +1,24 @@
 ﻿<Properties StartupConfiguration="{A1846195-DF59-AB97-E12D-0EAC914EC95B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/EnemySpawn.cs">
     <Files>
-      <File FileName="Assets/scripts/GameManager.cs" Line="27" Column="6" />
-      <File FileName="Assets/scripts/Player.cs" />
-      <File FileName="Assets/scripts/Enemy.cs" />
+      <File FileName="Assets/scripts/GameManager.cs" Line="44" Column="19" />
+      <File FileName="Assets/scripts/Player.cs" Line="95" Column="36" />
+      <File FileName="Assets/scripts/Enemy.cs" Line="98" Column="30" />
+      <File FileName="Assets/scripts/EnemySpawn.cs" Line="5" Column="18" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="c03_FPS_Start" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2d76a16b-748e-43f2-a0b8-7d58a4a117f1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sjie/Projects/Unity手机游工开发4示例工程/c03_FPS_Start/Assets/scripts/GameManager.cs" relfile="Assets/scripts/GameManager.cs" line="27" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
